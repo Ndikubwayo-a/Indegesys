@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="">
+    <script src=""></script>
+  </head>
+
+  <body>
+  {% load static %}
+
+  <!-- links -->
+  <div class="container bg-light" style="border:2px #navbarColor01 solid; width:100%; height:70px; background-color:; padding:7px;">
+    Location:{{ current_datetime }}<br>
+    <p> Breaking news: <marquee direction="left" style="font-weight:bold; font-size:18px; margin-top:-100px; ">He was caught stealing Toyota54-A65 at parking: A cricketstar in Brusels</marquee></p>
+
+  </div>
+
+  <!-- Nav links-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
+  <div class="container-fluid" style="height:80px;">
+    <a class="navbar-brand" href="#" style="font-size:35px;">BothaWeb</a>
+    <div style="margin-left:20px;" >
+      <p style="color: #00BFFF;">
+        The web seat for<br> dedicated sport enthusiasts.
+      </p>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarColor01" style="margin-left:450px;">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home
+          </a> </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gym</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Your peers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Social links</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        </ul>
+
+    </div>
+  </div>
+</nav>
+  <center>
+
+  <div style="border:2px #0000000 solid; margin-top:100px; width:500px; height:300px; padding:30px; box-shadow:2px 5px 2px 5px;
+  border-radius:5px 5px 5px 5px;">
+  <form>
+    <p><label for="username">Username:</label> <input type="text" name="user" placeholder="Your Username" id="username" required></p>
+    <p><label for="password">Password:</label> <input type="password" name="pass" placeholder="Your password" id="password" required></p>
+    <p><input type="submit" value="Login" style="margin:;"></p>
+
+    Don't you have an account? <a href="{% url 'createaccount' %}">Click here</a> to create it.
+  </form>
+  </div>
+</center>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+
+  </body>
+</html>
