@@ -1,0 +1,30 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #eaecee ;
+    height: 450px;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+#div-inside{
+    padding: 20px;
+    margin-left: 100px;
+}
+.subfooter{
+    display: flex;
+    height: 20px;
+    padding-left: 80px;
+    padding-top: 20px;
+    
+}
+#unmovable-section{
+    position: fixed;
+    margin-top: -200px;
+        
+}
+
+
