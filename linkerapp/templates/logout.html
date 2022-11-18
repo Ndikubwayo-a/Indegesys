@@ -79,21 +79,11 @@
                                  <a class="nav-link" href="/contact">Contact Us</a>
                               </li>
 
-                              {% if not request.user.is_authenticated %}
 
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="/login"><i class="fa fa-user-circle padd_right" aria-hidden="true"></i>Login</a>
                               </li>
-                              {% else %}
 
-                              <li class="nav-item d_none active"  >
-                                 <p > <a class="nav-link" href="#" style="color:#51fe44; " ><i class="fa fa-user-circle padd_right" aria-hidden="true"></i>{{ user }} FC</a>
-                                 <a id="userlogout" href="/logout" style="color:white; margin-left:50px;"> ( <u>Logout</u> ) </a></p>
-
-                              </li>
-
-
-                              {% endif %}
 
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -183,19 +173,19 @@
             <div class="row">
                <div class="col-md-4">
                   <div class="box_text">
-                     <h3>Players Info.</h3>
-                     <img src="{% static 'images/Player-info.png' %}" alt="#"/>
+                     <h3>Kiyovu FC</h3>
+                     <i><img src="{% static 'images/kiyovulogo.jpg' %}" alt="#"/></i>
                      <p>
-                     Position: <br>
-                     Games Played: <br>
-                     Points: <br>
+                     Position:<br>
+                     Games Played:<br>
+                     Points:<br>
 
                      </p>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="box_text">
-                     <h3>Clubs Info.</h3>
+                     <h3>Rayon Sport FC</h3>
                      <i><img src="{% static 'images/rayonlogo.jpg' %}" alt="#"/></i>
                      <p>
                         Position:<br>
@@ -206,8 +196,8 @@
                </div>
                <div class="col-md-4">
                   <div class="box_text">
-                     <h3>Tournaments Info.</h3>
-                     <img src="{% static 'images/PNL.jpg' %}" alt="#"/>
+                     <h3>APR FC</h3>
+                     <i><img src="{% static 'images/APRlogo.jpg' %}" alt="#"/></i>
                      <p>
                         Position:<br>
                         Games Played:<br>
@@ -219,7 +209,6 @@
          </div>
       </div>
       <!-- three_box -->
-      <br><hr style="font-weight:bold; height:px;">
       <!-- about -->
       <div  class="about">
          <div class="container">

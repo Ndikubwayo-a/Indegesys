@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
    <head>
       <!-- basic -->
@@ -8,20 +9,23 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>mical</title>
+      <title>Ferwafa</title>
+      <link rel = "icon" href ="https://upload.wikimedia.org/wikipedia/en/0/0f/Rwandese_Association_Football_Federation_logo.png"
+        type = "image/x-icon">
+
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
       <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %} ">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -33,7 +37,7 @@
    <body class="main-layout">
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+         <div class="loader"><img src=" {% static 'images/loading.gif' %}" alt="#" /></div>
       </div>
       <!-- end loader -->
       <!-- header -->
@@ -46,7 +50,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <a href="/index"><img src="{% static 'images/Ferwafalogo.png' %} " width="100px" height="80px" alt="Logo not loaded/" /></a>
                            </div>
                         </div>
                      </div>
@@ -58,23 +62,23 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item ">
-                                 <a class="nav-link" href="index.html"> Home  </a>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="/"> Home  </a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
+                                 <a class="nav-link" href="/about">About</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="furnitures.html">Furnitures</a>
+                                 <a class="nav-link" href="/tournaments">Tournaments</a>
                               </li>
                               <li class="nav-item active">
-                                 <a class="nav-link" href="testimonial.html">Testimonial</a>
+                                 <a class="nav-link" href="/clubs">Football clubs</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                 <a class="nav-link" href="/contact">Contact Us</a>
                               </li>
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="#"><i class="fa fa-user-circle padd_right" aria-hidden="true"></i>Login/Register</a>
+                                 <a class="nav-link" href="/login"><i class="fa fa-user-circle padd_right" aria-hidden="true"></i>Login</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -116,7 +120,7 @@
                                  <div class="row">
                                     <div class="col-md-6 margin_boot">
                                        <div class="test_box">
-                                          <i><img src="images/tes.jpg" alt="#"/></i>
+                                          <i><img src="{% static 'images/tes.jpg' %}" alt="#"/></i>
                                           <h4>JCKOLO</h4>
                                           <span>(It is a long )</span>
                                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as </p>
@@ -124,7 +128,7 @@
                                     </div>
                                     <div class="col-md-6 margin_boot">
                                        <div class="test_box">
-                                          <i><img src="images/tes1.jpg" alt="#"/></i>
+                                          <i><img src="{% static 'images/tes1.jpg' %}" alt="#"/></i>
                                           <h4>ROCOYO</h4>
                                           <span>(It is a long )</span>
                                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as </p>
@@ -140,7 +144,7 @@
                                  <div class="row">
                                     <div class="col-md-6 margin_boot">
                                        <div class="test_box">
-                                          <i><img src="images/tes.jpg" alt="#"/></i>
+                                          <i><img src="{% static 'images/tes.jpg' %}" alt="#"/></i>
                                           <h4>JCKOLO</h4>
                                           <span>(It is a long )</span>
                                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as </p>
@@ -148,7 +152,7 @@
                                     </div>
                                     <div class="col-md-6 margin_boot">
                                        <div class="test_box">
-                                          <i><img src="images/tes1.jpg" alt="#"/></i>
+                                          <i><img src="{% static 'images/tes1.jpg' %}" alt="#"/></i>
                                           <h4>ROCOYO</h4>
                                           <span>(It is a long )</span>
                                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as </p>
@@ -164,7 +168,7 @@
                                  <div class="row">
                                     <div class="col-md-6 margin_boot">
                                        <div class="test_box">
-                                          <i><img src="images/tes.jpg" alt="#"/></i>
+                                          <i><img src="{% static 'images/tes.jpg' %}" alt="#"/></i>
                                           <h4>JCKOLO</h4>
                                           <span>(It is a long )</span>
                                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as </p>
@@ -172,7 +176,7 @@
                                     </div>
                                     <div class="col-md-6 margin_boot">
                                        <div class="test_box">
-                                          <i><img src="images/tes1.jpg" alt="#"/></i>
+                                          <i><img src="{% static 'images/tes1.jpg' %}" alt="#"/></i>
                                           <h4>ROCOYO</h4>
                                           <span>(It is a long )</span>
                                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as </p>
@@ -208,24 +212,24 @@
                         <h2>Contact Us</h2>
                      </div>
                   </div>
-                  <div class="col-md-8">
+                  <div class="loc col-md-8">
                      <ul class="location_icon">
-                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Locatins</li>
-                        <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a> +71 9087654321</li>
-                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com</li>
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> </a> PO.Box:&nbsp;2000 Kigali-Rwanda</li><br><br>
+                        <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a> (+250)780518525</li> <br><br>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>ferwafa@yahoo.fr</li>
                      </ul>
                   </div>
                   <div class="col-md-6">
                      <form id="request" class="main_form">
                         <div class="row">
                            <div class="col-md-12 ">
-                              <input class="contactus" placeholder="Full Name" type="type" name="Full Name"> 
+                              <input class="contactus" placeholder="Full Name" type="type" name="Full Name">
                            </div>
                            <div class="col-md-12">
-                              <input class="contactus" placeholder="Email" type="type" name="Email"> 
+                              <input class="contactus" placeholder="Email" type="type" name="Email">
                            </div>
                            <div class="col-md-12">
-                              <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
+                              <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">
                            </div>
                            <div class="col-md-12">
                               <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
@@ -246,10 +250,10 @@
                   </div>
                   <div class="col-md-6">
                      <div class="map">
-                        <figure><img src="images/map.jpg" alt="#"/></figure>
+                        <figure><img src="{% static 'images/' %}" alt=""/></figure>
                      </div>
                      <form class="bottom_form">
-                        <h3>Newsletter</h3>
+                        <h3>Subscribe to get daily updates from FERWAFA.</h3>
                         <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
                         <button class="sub_btn">subscribe</button>
                      </form>
@@ -260,7 +264,7 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <p>Copyright 2019 All Right Reserved By <a href="https://html.design/"> Free  html Templates</a></p>
+                        <p>Copyright 2022 &nbsp;-&nbsp; All Right Reserved By <a href="https://html.design/"> FERWAFA</a></p>
                      </div>
                   </div>
                </div>
@@ -269,12 +273,12 @@
       </footer>
       <!-- end footer -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="{% static 'js/jquery.min.js' %} "></script>
+      <script src="{% static 'js/popper.min.js' %} "></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
    </body>
 </html>
